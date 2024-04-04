@@ -31,8 +31,17 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 
 ## Documentação da API (Swagger)
 
-Para documentação da API, acesse o link: https://nlw-unite-nodejs.onrender.com/docs
+Para documentação da API, acesse o link enquanto a api estiver em execução: http://localhost:3333/docs
 
 ## Banco de dados
 
-Nessa aplicação vamos utilizar banco de dados relacional (SQL). Para ambiente de desenvolvimento seguiremos com o SQLite pela facilidade do ambiente.
+Nessa aplicação utilizei banco de dados relacional (SQL). Para ambiente de desenvolvimento segui com o SQLite pela facilidade do ambiente rodando com Prisma ORM.
+
+## Scripts
+
+- `db:studio` Visualizar dados armazenados no DB
+- `db:migrate` Gerar migrations para para o DB
+- `db:seed` Gerar dados para teste no banco de dados
+- `build` Gerar pasta `dist` para rodar em produção
+- `start` Inicia projeto em produção
+- `dev` Rodar projeto em ambiente de desenvolvimento
