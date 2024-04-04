@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo evento",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST  http://localhost:3333/events/832cb7fa-9999-4e53-aa67-18000c9ca32f/attendees
+Content-Type: application/json
+
+{
+  "name": "Ricardo Bierhals",
+  "email": "ricardo2@email.com"
+}
+
+
+###
+GET http://localhost:3333/events/832cb7fa-9999-4e53-aa67-18000c9ca32f
+
+
+###
+GET http://localhost:3333/attendees/4/badge
+
+
+###
+GET http://localhost:3333/attendees/4/check-in
+
+###
+GET http://localhost:3333/events/2812e197-0af4-4381-8e76-da93bf4215ce/attendees?query=Ricardo
+
